@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Permanent+Marker&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Ubuntu:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:sans-serif;
+  color: #333333;
+}
+h1{
+  font-family: Lucida;
+  color: white;
+}
+header,
+main,
+footer {
+  margin: 10px auto;
+  max-width: 800px;
+}
+header,
+footer {
+  border: 1px solid cadetblue;
+  background-color: rgb(98, 60, 204);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+header {
+  display: flex;
+}
+header > h1 {
+  font-family: Permant Maker;
+  margin: auto;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main hr.header-line {
+  margin-top: -15px;
+}
+main ul li {
+  margin-bottom: 10px;
+}
+footer p.last_updated {
+  color: #ffff00;
+}
+footer {
+  font-family: Georgia;
+  text-align: center;
+}
