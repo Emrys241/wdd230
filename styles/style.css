@@ -27,7 +27,7 @@ header {
   display: flex;
 }
 header > h1 {
-  font-family: Permant Maker;
+  font-family: Fira+Sans;
   margin: auto;
 }
 img {
