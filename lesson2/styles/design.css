@@ -1,0 +1,25 @@
+
+header h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    color: yellow;
+}
+h2 {
+    font-family:sans-serif;
+    font-size: 40px;
+}
+
+@media screen {
+    
+}
