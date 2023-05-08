@@ -6,3 +6,6 @@ h1 {
 h2 {
   font-family: Alegreya + Sans + SC;
 }
+header h2 {
+  color: black;
+}

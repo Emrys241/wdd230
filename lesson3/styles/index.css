@@ -1,33 +1,9 @@
-/* header {
-    position: relative;
-    text-align: center;
-    
-  } */
+
   header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  /* header img {
-    margin-bottom: 20px;
-  } */
-  
-  
-  header h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color:#F72585;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; 
-    background-color: #160F29;
-    
   }
 
  img {
@@ -76,7 +52,7 @@ nav ul li:hover {
 
 tr td {
   padding: 1rem;
-  border: 1px solid #160;
+  border: 1px solid #160F29;
 }
 
 tr td:first-child {
