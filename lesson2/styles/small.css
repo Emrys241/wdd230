@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Alumni+Sans+Collegiate+One&family=Josefin+Sans&family=Open+Sans:wght@700&family=Sansita+Swashed:wght@700&display=swap"); 
+@media only screen and (max-width: 37.5em) {
+    
+  main {
+      grid-template-columns: 1fr;
+  }
+
+  .contrast_container {
+      margin: 15px;
+  }
+
+  .alignment_container {
+      grid-column: 1;
+      margin: 15px;
+  }
+ 
+
+  .whitespace_container {
+      grid-column: 1;
+      margin: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  h1 {
+      font-size: 1.5rem;
+      font-family: Alegreya; 
+  }
+
+  h2 {
+      font-size: 1rem;
+  }
+
+  footer {
+      padding: 0.8rem;
+  }
+}
+
+body {
+  width: 100%;
+  line-height: 1.2;
+  margin: auto;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 1.25rem auto;
+}
+
+header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+
+
+footer {
+  background-color: grey;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+section p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 110%;
+  background-color: grey;
+}
+
+section h3 {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  margin-top: 1px;
+  padding: 10px;
+  font-size: 110%;
+}
