@@ -1,0 +1,30 @@
+@media only screen and (min-width: 60em) {
+
+  footer {
+      padding: 2rem;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+  
+  h2 {
+      font-size: 2rem;
+      font-style: italic;
+  }
+
+  .contrast_container {
+      grid-column: 1;
+      margin: 4px;
+  }
+  
+  .alignment_container {
+      grid-column: 2;
+      margin: 4px;
+  }
+  
+  .whitespace_container {
+      grid-column: 3;
+      margin: 4px;
+  }
+}

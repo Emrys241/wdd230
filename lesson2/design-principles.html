@@ -2,67 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Frontend Development 230</title>
-    <link rel="stylesheet" href="styles/design.css" />
-    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/last.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Alumni+Sans+Collegiate+One&family=Josefin+Sans&family=Open+Sans:wght@700&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <h1>Design Principles Document | Bernard Amegah</h1>
+      <h1>Design Principles Document </h1>
+      <h2>Bernard Amegah</h2>
     </header>
-    <div id="first_container">
-      <div class="name">
-        <div class="info">
-          <h2>Contrast</h2>
-          <h3>Seige Media</h3>
-          <a
-            href="https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist"
-            >siegemedia.com</a
-          >
-          <img src="images/seige.png" alt="siege" />
-          <p>
-            The website giver the user the ability to practive Contrast on pages
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="second_container">
-      <div class="name">
-        <div class="info">
-          <h2>Alignment</h2>
-          <h3>254-Online</h3>
-          <a href="https://254-online.com/alignment-principle-design/"
-            >254-online.com</a
-          >
-          <img src="images/align.png" alt="254 screenshot" />
-          <p>
-            Alignment helps us to create a sense of unity by providing structure
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="third_container">
-      <div class="name">
-        <div class="info">
-          <h2>White Space</h2>
-          <h3>Fabrikbrands</h3>
-          <a
-            href="https://fabrikbrands.com/white-space-in-graphic-design-white-space-principle-of-design/"
-            >fabrikbrands.com</a
-          >
-          <img src="images/white.png" alt="white" />
-          <p>The website show you how to Create clarity and legibility</p>
-        </div>
-      </div>
-    </div>
+    <Main>
+      <section class="contrast_container">
+        <h3> Contrast</h3>
+        <p>Seige Media</p>
+        <a href="https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist"> www.siegemedia.com </a>
+        <img src="images/seige.png" alt="siege home" >
+        <p>The website give the user the ability to practive Contrast on pages</p>
+      </section>
+      <section class="alignment_container">
+        <h3>Alignment</h3>
+        <p>254-Online</p>
+        <a href="https://254-online.com/alignment-principle-design/">254-online.com</a>
+        <img src="images/align.png" alt="254 home">
+        <p> Alignment helps us to create a sense of unity by providing structure</p>
+      </section>
+      <section class="whitespace_container">
+        <h3>White Space</h3>
+        <p>Fabrikbrands</p>
+        <a href="https://fabrikbrands.com/white-space-in-graphic-design-white-space-principle-of-design/">fabrikbrands.com</a>
+        <img src="images/white.png" alt="white" />
+        <p>The website show you how to Create clarity and legibility</p>
+      </section>
+    </Main>
     <footer>
       <p>&copy; <span id="copyright"></span> | Bernard Amegah | Ghana</p>
       <p class="last_updated">Last Updated: <span id="last_updated"></span></p>
