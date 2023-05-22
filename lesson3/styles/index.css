@@ -15,12 +15,12 @@
 footer {
     text-align: center;
     flex-wrap: wrap;
-    background-color: #160F29;
+    background-color: #0F1020;
     padding: 5px;
-    color: #E4FF1A;
+    color: #FAA6FF;
  }
  body {
-  background-color: #1be7ff;
+  background-color: #EFC3F5;
  }
 
  nav ul {
@@ -39,7 +39,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #E4FF1A;
+  color: #FAA6FF;
   padding: 0.5rem 0;
   text-decoration: none;
   font-size: 0.9rem;
@@ -47,15 +47,15 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background-color: #160F29;
+  background-color: #0F1020;
 }
 
 tr td {
   padding: 1rem;
-  border: 1px solid #160F29;
+  border: 1px solid #0F1020;
 }
 
 tr td:first-child {
-  color: #E4FF1A;
-  background-color: #160F29;
+  color: #FAA6FF;
+  background-color: #0F1020;
 }
