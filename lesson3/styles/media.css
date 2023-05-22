@@ -14,11 +14,12 @@
     nav ul {
       flex-direction: row;
     }
-    main img {
+    img {
       display: flex;
       width: 500px;
-      align-content: center;
+      float: right;
       padding: 5px;
+      height: 250px;
       padding-left: 15%;
       /* padding-right: 100%; */
     }
