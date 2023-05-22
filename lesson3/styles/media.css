@@ -15,9 +15,10 @@
       flex-direction: row;
     }
     main img {
+      display: flex;
       width: 500px;
       align-content: center;
-      padding: auto;
+      padding: 5px;
       padding-left: 15%;
       /* padding-right: 100%; */
     }
@@ -30,7 +31,7 @@
     main img {
       width: 100%;
       align-content: center;
-      padding: auto;
+      padding: 5px;
       padding-left: 50px;
       padding-inline-start: 20px;
     }
