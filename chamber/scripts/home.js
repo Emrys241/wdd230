@@ -123,8 +123,8 @@ var header = document.createElement("h2");
 
       // Append the header, image, and paragraph to the placeholder
       placeholder.appendChild(header);
-      // placeholder.appendChild(image);
-      // placeholder.appendChild(paragraph);
+      placeholder.appendChild(image);
+      placeholder.appendChild(paragraph);
 
 // Create the header element
 var header = document.createElement("h2");
@@ -139,7 +139,7 @@ var placeholder = document.querySelector(".weather");
 
 // Append the header and paragraph to the placeholder
 placeholder.appendChild(header);
-// placeholder.appendChild(paragraph);
+placeholder.appendChild(paragraph);
 
 // Create the image element
 var callToAction = document.createElement("img");
