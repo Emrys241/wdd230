@@ -1,0 +1,89 @@
+@media only screen and (min-width: 35rem) {
+    .call-button {
+        position: relative;
+        bottom: 300px;
+        left: 550px;
+    }
+
+
+   .information{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+   }
+    .footer1 {
+        display: none;
+    }
+    .grid-container{
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+    .grid-container > div {
+         min-height: 300px;
+    }
+    .spotlight {
+        grid-template-columns: 1fr 1fr;
+        grid-row: 4/5;
+    }
+    .spotlight > div {
+        min-height: 400px;
+    }
+    .join {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    .call-to-action {
+        grid-column: 1/4;
+
+    }
+    .call-to-action img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0;
+      }
+    
+    
+    .spotlight {
+        grid-template-rows: none;
+        grid-row: 3/4;
+        grid-column: 1/4;
+
+    }
+    .news {
+        grid-column: 1/4;
+    }
+    .event{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .weather {
+        grid-column: 3/4;
+        grid-row: 5/6;
+        
+    }
+    .socials img {
+        width: 30px;
+        
+    }
+    .chamber-name h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    header #header-logo img {
+        width: 80px;
+        height: auto;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    header {
+        padding-top: 20px;
+
+    }
+    .slash {
+        display: inline;
+    }
+
+
+
+}

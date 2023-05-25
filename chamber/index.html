@@ -1,62 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emrys Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="https://coolors.co/1be7ff-160f29-e4ff1a-f72585-4361ee">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emrys B2B</title>
+    <link rel="icon" href="siteicon.ico">
+    <meta
+      name="description"
+      content="A website that will habour all other business"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <img src="images/logo.png" alt="pictue of cloth">
-        <h2>Emrys Chamber of Commerce </h2>
+      <div id="banner"></div>
+      <section class="main-header">
+        <div class="img-name">
+          <div id="header-logo">
+            <img
+              src="images/site-logo.png"
+              alt="emrys chamber logo"
+            >
+          </div>
+          <div class="chamber-name">
+            <h1>Emrys B2B</h1>
+            <h2>Chamber of Commerce</h2>
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/login/">
+            <img src="images/fb-logo.png" alt="facebook icon">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="images/ig-logo.png" alt="instagram icon">
+          </a>
+        </div>
+
         <nav>
-            <ul>
-                <li>
-                    <a href="#"> Home</a>
-                </li>
-                <li>
-                    <a href="#">Page1</a>
-                </li>
-                <li>
-                    <a href="#">Page2</a>
-                </li>
-                <li>
-                    <a href="#">Page3</a>
-                </li>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Instagram</a>
-                </li>
-            </ul>
+          <button id="humburgerbtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li class="active"><a href="index.html">Discover</a></li>
+            <li><a href="su.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </ul>
         </nav>
-        <p>Todays Date: <span id="date"></span></p>
+      </section>
+
+      <div class="header-date">
+        <span id="currentdate"></span>
+      </div>
     </header>
 
-    <main>
+    <main class="grid-container">
+      <div class="herodiv">
+        <div class="call-to-action"></div>
+        <section class="call-button">
+          <h3>Join The Chamber</h3>
+        </section>
+        <section class="welcome">
+          <h3>Welcome To Emrys B2B Chamber of Commerce</h3>
+        </section>
+      </div>
+      <div class="event"></div>
+      <div class="weather"></div>
+      <div class="news"></div>
+      <div class="join"></div>
+      <div class="spotlight">
+        <div class="spot1"></div>
+        <div class="spot2">  </div>
+        <!-- <div class="spot3"></div> -->
+      </div>
     </main>
 
     <footer>
-        <img src="Images/logo.png" alt="logo">
-        <p>&copy; <span id="copyright"></span> | Bernard Amegah | Ghana</p>
-        <p>SITE MAP
-            <a href="index.html"> Home </a>
-        <p><a href="target-audience.html"> Target Audience </a></p>
-        <p><a href="design.html"> Design </a></p>
-        </p>
-        <p class="last_updated">Last Updated: <span id="last_updated"></span></p>
+      <div class="information">
+        <div class="footer-logo">
+          <img src="images/site-logo.png" alt="emrys b2b logo">
+        </div>
+        <div>
+          <h2>Emrys B2B Chamber of Commerce</h2>
+          <p>Tema Community 1</p>
+          <p>Accra, Ghana</p>
+        </div>
+        <div>
+          <p>info@pointofgrace.com</p>
+          <p>+233247709497</p>
+          <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z"
+            >📍 See Location</a
+          >
+        </div>
+      </div>
+
+      <hr>
+      <div class="footerTime">
+        &copy; <span id="currentyear"></span> <span class="slash">|</span>
+
+        Emrys B2B <span class="slash">|</span>
+        <span id="creator-name"><strong>|Bernard Amegah|</strong> </span>
+        <span class="slash">|</span>
+        <br class="footer1">
+
+        WDD 230 Project <span class="slash">|</span>
+        <br class="footer2">
+
+        <div id="lastModified">Last Modified</div>
+      </div>
     </footer>
-
-    <script src="scripts/time.js"></script>
-</body>
-
+    <script src="scripts/date.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/home.js"></script>
+  </body>
 </html>
