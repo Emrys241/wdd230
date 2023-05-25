@@ -10,7 +10,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 4fr auto;
-  background-color: #3a8c8c;
+  background-color: #faa6ff;
   padding: 0.8rem;
   min-height: 20vh;
 }
@@ -55,7 +55,7 @@ header #header-logo img {
   max-width: 100%;
   text-align: center;
   font-size: .9rem;
-  background-color: #323232;
+  background-color: #2f195f;
   color: white;
   margin-top: 5px;
   grid-column: 1/2;
@@ -147,7 +147,7 @@ nav ul.open {
   padding: 10px;
   color: #fff;
   text-align: center;
-  background-color: #083667;
+  background-color: #0f1020;
   min-height: 100%;
 }
 
@@ -216,7 +216,7 @@ hr {
 .join h2,
 .spotlight h2 {
   background-color: #083667;
-  color: #ddd0c8;
+  color: #faa6ff;
 }
 
 .call-to-action p,
@@ -244,8 +244,8 @@ main .grid-container > div .join p{
 footer {
   padding: 0.8rem;
   text-align: center;
-  background-color: #3a8c8c;
-  color: #fff;
+  background-color: #2f195f;
+  color: white;
   
 }
 
