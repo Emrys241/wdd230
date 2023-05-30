@@ -5,6 +5,10 @@
         left: 550px;
     }
 
+    .welcome {
+        padding-top: 175px;
+        
+    }
 
    .information{
     display: grid;

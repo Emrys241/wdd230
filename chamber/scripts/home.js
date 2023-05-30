@@ -19,8 +19,8 @@ header.textContent = "spotlight2";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
+image.src = "#";
+image.alt = "#";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -36,33 +36,12 @@ placeholder.appendChild(image);
 placeholder.appendChild(paragraph);
 
 var header = document.createElement("h2");
-header.textContent = "Event";
-
-// Create the image element
-var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
-
-// Create the paragraph element
-var paragraph = document.createElement("p");
-paragraph.textContent =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed";
-
-// Get the placeholder element
-var placeholder = document.querySelector(".event");
-
-// Append the header, image, and paragraph to the placeholder
-placeholder.appendChild(header);
-placeholder.appendChild(image);
-placeholder.appendChild(paragraph);
-
-var header = document.createElement("h2");
 header.textContent = "Weather";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
+image.src = "#";
+image.alt = "#";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -82,8 +61,8 @@ header.textContent = "Join";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
+image.src = "#";
+image.alt = "#";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -103,8 +82,8 @@ header.textContent = "Release";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
+image.src = "#";
+image.alt = "#";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -124,8 +103,8 @@ header.textContent = "Spotlight";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
+image.src = "#";
+image.alt = "#";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -145,8 +124,8 @@ header.textContent = "spotlight1";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "images/family-tree.png";
-image.alt = "Family History Logo";
+image.src = "#";
+image.alt = "#";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -161,9 +140,30 @@ placeholder.appendChild(header);
 placeholder.appendChild(image);
 placeholder.appendChild(paragraph);
 
+var header = document.createElement("h2");
+header.textContent = "Event";
+
+// Create the image element
+var image = document.createElement("img");
+image.src = "#";
+image.alt = "Hot Sale";
+
+// Create the paragraph element
+var paragraph = document.createElement("p");
+paragraph.textContent =
+  "Sales on Discount coming 15 June, 2023";
+
+// Get the placeholder element
+var placeholder = document.querySelector(".event");
+
+// Append the header, image, and paragraph to the placeholder
+placeholder.appendChild(header);
+placeholder.appendChild(image);
+placeholder.appendChild(paragraph);
+
 // Create the image element
 var callToAction = document.createElement("img");
-callToAction.src = "images/new-good.jpg";
+callToAction.src = "images/shoping.jpg";
 callToAction.alt = "New Goods";
 
 var placeholder = document.querySelector(".call-to-action");
