@@ -178,6 +178,14 @@ nav ul.open {
   padding: 10px;
 
 }
+figure.myphoto {
+  width: 50%;
+  border: 1px red dashed;
+  margin-top: 101%;
+}
+
+
+main figure.myphoto img {width:100%;}
 hr {
   border-style: solid;
 }
