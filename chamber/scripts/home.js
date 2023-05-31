@@ -162,11 +162,11 @@ placeholder.appendChild(image);
 placeholder.appendChild(paragraph);
 
 // Create the image element
-var callToAction = document.createElement("img");
-callToAction.src = "images/shoping.jpg";
-callToAction.alt = "New Goods";
+// var callToAction = document.createElement("img");
+// callToAction.src = "images/shoping.jpg";
+// callToAction.alt = "New Goods";
 
-var placeholder = document.querySelector(".call-to-action");
+// var placeholder = document.querySelector(".call-to-action");
 
-// Append the header, image, and paragraph to the placeholder
-placeholder.appendChild(callToAction);
+// // Append the header, image, and paragraph to the placeholder
+// placeholder.appendChild(callToAction);
