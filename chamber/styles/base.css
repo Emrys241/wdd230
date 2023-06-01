@@ -135,10 +135,10 @@ nav ul.open {
   display: block;
 }
 
-/*Main CSS*/
+/* Main CSS
 .grid-container div {
   min-height: auto;
-}
+} */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -148,7 +148,7 @@ nav ul.open {
   color: #fff;
   text-align: center;
   background-color: #0f1020;
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 
 /*.herodiv {
@@ -178,10 +178,9 @@ nav ul.open {
   padding: 10px;
 
 }
-figure.myphoto {
-  width: 50%;
-  border: 1px red dashed;
-  margin-top: 101%;
+main figure.myphoto {
+  width: 100%;
+  border-left: 1px red;
 }
 
 
@@ -193,8 +192,8 @@ hr {
 .welcome {
   display: block;
   position: relative;
-  bottom: 500px;
-  right: 5px;
+  bottom: 50%;
+  right: 1px;
   color: #0f1020;
 }
 
@@ -238,14 +237,25 @@ hr {
 }
 
 .call-to-action img {
+  /* width: 100%; */
+  height: 100%;
+  /* object-fit: cover; */
+  padding: 0;
+}
+.event img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.weather img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 0;
 }
 
 main .grid-container > div .join p{
-  font-size: 100px;
+  font-size: 100%;
 }
 
 

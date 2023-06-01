@@ -40,8 +40,8 @@ header.textContent = "Weather";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "#";
-image.alt = "#";
+image.src = "images/weather.jpeg";
+image.alt = "weather image";
 
 // Create the paragraph element
 var paragraph = document.createElement("p");
@@ -145,7 +145,7 @@ header.textContent = "Event";
 
 // Create the image element
 var image = document.createElement("img");
-image.src = "#";
+image.src = "images/shoping.jpg";
 image.alt = "Hot Sale";
 
 // Create the paragraph element
