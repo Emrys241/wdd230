@@ -7,13 +7,20 @@
 
     .welcome {
         padding-top: 1px;
-        
+        bottom: 50%;
+        color: #2f195f;
     }
 
    .information{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
    }
+   /* .myphoto {
+    object-fit: cover;
+    height: auto;
+    width: auto;
+   } */
+
     .footer1 {
         display: none;
     }
@@ -38,6 +45,7 @@
     }
     .call-to-action {
         grid-column: 1/4;
+        height: 100%;
 
     }
     .call-to-action img {

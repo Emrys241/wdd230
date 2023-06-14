@@ -1,7 +1,7 @@
 body {
   min-height: 80vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid; */
+  /* grid-template-rows: auto 1fr auto; */
   background-color: #ddd0c8;
 }
 
@@ -12,8 +12,15 @@ header {
   grid-template-rows: auto 4fr auto;
   background-color: #faa6ff;
   padding: 0.8rem;
-  min-height: 20vh;
+  min-height: 100%;
 }
+
+/* Add hover effect to navigation items */
+#primaryNav li a:hover {
+  background-color: #7353ba;
+  color: #fff;
+}
+
 
 .main-header {
   grid-row: 2/4;
@@ -74,19 +81,12 @@ header #header-logo img {
   
 }
 
-
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-
-
-/*----------- apply a natural box layout model to all elements --------------*/
 * {
   box-sizing: border-box;
 }
 
 
-/*nav{
-    background-color: #eee;
-}*/
+
 nav button {
   background-color: transparent;
   border: none;
@@ -172,6 +172,7 @@ nav ul.open {
 
 .call-button p {
   color: #083667;
+  padding-left: 50%;
 }
 .grid-container > div, .spotlight > div {
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -180,7 +181,6 @@ nav ul.open {
 }
 main figure.myphoto {
   width: 100%;
-  border-left: 1px red;
 }
 
 
@@ -192,9 +192,14 @@ hr {
 .welcome {
   display: block;
   position: relative;
-  bottom: 50%;
   right: 1px;
-  color: #0f1020;
+  padding-left: 10px;
+  color: #faa6ff;
+  font-size: 15px;
+}
+.myphoto {
+  padding-right: 15%;
+  width: auto;
 }
 
 
@@ -236,17 +241,18 @@ hr {
   font-size: 10px;
 }
 
-.call-to-action img {
-  /* width: 100%; */
+/* .call-to-action img {
+  width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   padding: 0;
-}
+} */
 .event img {
   width: 100%;
   height: 100%;
   /* object-fit: cover; */
 }
+
 
 .weather img {
   width: 100%;
