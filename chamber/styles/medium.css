@@ -102,6 +102,27 @@
         display: inline;
     }
 
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .membershipLevels p {
+        font-size: 1.4rem;
+    }
+    .silver,
+    .gold,
+    .bronze ul li{
+        font-size: 1.4rem;
+    }
+
+    /* ________Discover_______ */
+    .discover-main p {
+        color: #7353ba;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+
 
 
 }

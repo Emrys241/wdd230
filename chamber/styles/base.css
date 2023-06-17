@@ -91,11 +91,12 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 2rem;
+  color: #083667;
 }
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 1rem;
   height: auto;
 }
 
@@ -107,9 +108,9 @@ nav ul li a {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-nav ul li.active a {
+/* nav ul li.active a {
   color: #ffff;
-}
+} */
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -301,5 +302,185 @@ p {
   font-family: 'Roboto Slab', serif;
 
 }
+
+/**______Join page CSS____________*/
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.membershipLevels {
+  margin: 10px;
+}
+.membershipLevels p {
+  font-size: 1rem;
+}
+.membershipLevels h2 {
+  padding: 6px;
+}
+
+.form h1 {
+  display: block;
+  text-align: center;
+}
+
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  color: black;
+}
+
+.form form input, .form textarea {
+  font-size: 1em;
+  width: 450px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #e5e5e5;
+}
+
+.form textarea {
+  height: 250px;
+}
+
+.form form label {
+  font-weight: 700;
+  text-align: left;
+  margin: 5px;
+}
+
+label, textarea, select{
+  display: inline-block;
+  clear: left;
+  width: 450px;
+  text-align: left;
+}
+
+.form #submit {
+  background-color: #14213d;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 15px;
+}
+
+.form #submit:hover {
+  background-color: #1173fc;
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.thankyou h1, .board h1 {
+  display: block;
+}
+
+      /*_____Discover CSS_________*/
+.discover div:hover{
+  -moz-box-shadow: 0 0 10px #ddd0c8;
+  -webkit-box-shadow: 0 0 10px #ddd0c8;
+  box-shadow: 0 0 10px #ddd0c8;
+  }
+  .discover img {
+  width: 300px;
+  height: 300px;
+  }
+  picture img {
+      transition: opacity 0.3s ease-in-out;
+  }
+    
+  picture img:hover {
+      opacity: 0.8;
+      box-shadow: 0 0 50px #333;
+  }
+  .discover-main{
+      text-align: center;
+      min-width: auto;   
+  }
+  .discover-main h1, h2 {
+    color: #2f195f;
+  }
+
+
+  .discover-main p {
+    color: #083667;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: 12px;
+
+  }
+  .discover {
+      
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+  }
+
+  .image {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  .discover {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
+  }
+  .image1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+  }
+  .image2 {
+      grid-row: 2/3;
+      grid-column: 1/2;
+  }
+  .image3{
+      grid-row: 3/4;
+  }
+  .image4{
+      grid-row: 4/5;
+  }
+  .image5{
+      grid-row: 5/6;
+  }
+  .image6{
+      grid-row: 6/7;
+  }
+  .text2 {
+      grid-column: 2/3;
+  }
+
+  .membershipLevels p {
+      font-size: 1.8rem;
+  }
+  .silver,
+  .gold,
+  .bronze ul li{
+      font-size: 1.8rem;
+  }
 
 
