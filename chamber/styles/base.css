@@ -400,6 +400,28 @@ label, textarea, select{
 }
 
       /*_____Discover CSS_________*/
+
+      .discover div {
+        padding: 10px;
+      }
+      .discover-main h1{
+        text-align: center;
+        font-size: 4rem;
+      
+      }
+      .discover-main p{
+        font-size: 1.8rem;
+      
+      }
+      .discover-main{
+        justify-content: center;
+        align-items: center
+      
+      }   
+
+
+
+
 .discover div:hover{
   -moz-box-shadow: 0 0 10px #ddd0c8;
   -webkit-box-shadow: 0 0 10px #ddd0c8;
@@ -419,7 +441,8 @@ label, textarea, select{
   }
   .discover-main{
       text-align: center;
-      min-width: auto;   
+      min-width: auto; 
+
   }
   .discover-main h1, h2 {
     color: #2f195f;
@@ -430,57 +453,8 @@ label, textarea, select{
     color: #083667;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
-    font-size: 12px;
+    font-size: 15px;
 
-  }
-  .discover {
-      
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
-  }
-
-  .image {
-      display: block;
-      width: 100%;
-      height: auto;
-  }
-  .discover {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(6, 1fr);
-  }
-  .image1 {
-      grid-row: 1/2;
-      grid-column: 1/2;
-  }
-  .image2 {
-      grid-row: 2/3;
-      grid-column: 1/2;
-  }
-  .image3{
-      grid-row: 3/4;
-  }
-  .image4{
-      grid-row: 4/5;
-  }
-  .image5{
-      grid-row: 5/6;
-  }
-  .image6{
-      grid-row: 6/7;
-  }
-  .text2 {
-      grid-column: 2/3;
-  }
-
-  .membershipLevels p {
-      font-size: 1.8rem;
-  }
-  .silver,
-  .gold,
-  .bronze ul li{
-      font-size: 1.8rem;
   }
 
 
