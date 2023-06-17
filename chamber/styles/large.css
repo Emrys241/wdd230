@@ -147,6 +147,51 @@
     .myphoto {
         padding-left: 25%;
     }
+      /*Discover CSS*/
+/*--------------------------------------------------------------------------*/
+.discover div:hover{
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    }
+    .image{
+    width: 600px;
+    height: 600px;
+    }
+    picture img {
+        transition: opacity 0.3s ease-in-out;
+    }
+      
+    picture img:hover {
+        opacity: 0.8;
+        box-shadow: 0 0 50px #333;
+    }
+    .discover-main{
+        text-align: center;
+        min-width: auto;
+      
+    }
+    .discover {
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
 
-
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .discover-main p {
+        color: #083667;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        font-size: 30px;
+    
 }

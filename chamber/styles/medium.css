@@ -121,6 +121,36 @@
         padding: 10px;
         font-size: 20px;
     }
+     .discover {
+      
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+  }
+
+  .image {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  .discover {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
+  }
+  .discover img {
+    width: 400px;
+    height: 400px;
+    }
+
+  /* .membershipLevels p {
+      font-size: 1.8rem;
+  }
+  .silver,
+  .gold,
+  .bronze ul li{
+      font-size: 1.8rem;
+  } */
 
 
 
