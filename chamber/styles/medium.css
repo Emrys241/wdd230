@@ -140,7 +140,11 @@
   }
   .discover img {
     width: 400px;
-    height: 400px;
+    height: 500px;
     }
+    .thankyou img {
+        width: 500px;
+        height: 500px;
+      }
 
 }
