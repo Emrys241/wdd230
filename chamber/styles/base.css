@@ -381,7 +381,7 @@ label, textarea, select{
 }
 
 .form #submit:hover {
-  background-color: #1173fc;
+  background-color: #21395c;
 }
 
 .thankyou {
@@ -390,9 +390,13 @@ label, textarea, select{
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
   min-height: 100vh;
+}
+.thankyou img {
+  width: 400px;
+  height: 500px;
 }
 
 .thankyou h1, .board h1 {
