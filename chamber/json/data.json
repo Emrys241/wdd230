@@ -1,0 +1,85 @@
+{
+    "companies": [
+      {
+        "name": "Philanx Medical Services",
+        "address": "House 3 Ginger street Adenta Housing down",
+        "phone": "+233558097253",
+        "website": "No website",
+        "image": "images/ph.jpg",
+        "membership": "Gold"
+      },
+      {
+        "name": "Exquisite Woodworks",
+        "address": "Labone. Accra",
+        "phone": "00233507313813",
+        "website": "http://www.exquisitewoodworksgh.com/",
+        "image": "images/ex.jpg",
+        "membership": "Silver"
+      },
+      {
+        "name": "BricknBuild",
+        "address": "270 Dr Busia Highstreet",
+        "phone": "0245393809",
+        "website": "http://www.brickghana.com/",
+        "image": "images/Br.jpeg",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Megamax Electronics Limited",
+        "address": "144 Dansoman High St",
+        "phone": "+233 56 128 8760",
+        "website": "http://megamaxelectronics.com/product-category/home-appliances/",
+        "image": "images/mg.png",
+        "membership": "Silver"
+      },
+      {
+        "name": "The Law Office of Clinton Consultancy",
+        "address": "Presidential Floor, Movenpick",
+        "phone": "00 233 27 2522695",
+        "website": "http://www.clintonconsultancy.com",
+        "image": "images/cl.png",
+        "membership": "Silver"
+      },
+      {
+        "name": "COLORMAX GHANA LTD",
+        "address": "East-Airport, Accra",
+        "phone": "0544332783",
+        "website": "https://www.colormaxghana.biz/",
+        "image": "images/mx.png",
+        "membership": "Bornze"
+      },
+      {
+        "name": "H2o Solutions Tech Ltd",
+        "address": "Adenta Dodowa",
+        "phone": "00233 540245221",
+        "website": "http://www.h2osolutiontech.com",
+        "image": "images/h2o.png",
+        "membership": "Gold"
+      },
+      {
+        "name": "Elite audio Video Automations",
+        "address": "67 brenya st,tesano, Accra",
+        "phone": "+233558491226",
+        "website": "http://www.eliteautomations.com",
+        "image": "images/au.png",
+        "membership": "Bronze"
+      },
+      {
+        "name": "ACT ICT Ghana Ltd",
+        "address": "Labone, Accra",
+        "phone": "057-7700 555",
+        "website": "http://www.act-ict.com",
+        "image": "images/ict.jpg",
+        "membership": "Silver"
+      },
+      {
+        "name": "Secure Travel and Tours",
+        "address": "Dansoman, Accra,",
+        "phone": "+233 (0) 20 4444220",
+        "website": "https://www.securetravelandtours.com",
+        "image": "images/tr.jpg",
+        "membership": "Silver"
+      }
+    ]
+  }
+  

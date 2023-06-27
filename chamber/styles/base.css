@@ -461,4 +461,82 @@ label, textarea, select{
 
   }
 
+  /* ________DIRECTORY _________ */
+  /* Add any additional CSS rules specific to the directory page */
+.directory-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.directory-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.directory-card h2 {
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+.directory-card img {
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.directory-card p {
+  margin: 0;
+  font-size: 1rem;
+  
+}
+
+.directory-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.directory-list-item {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.directory-list-item h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+/* .directory-list-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+} */
+
+.directory-list-item p {
+  margin: 0;
+}
+
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.directory-container.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
 
