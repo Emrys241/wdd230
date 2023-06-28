@@ -26,8 +26,8 @@ async function apiFetch() {
       weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
       temperatureElement.textContent = temperature;
       conditionElement.textContent = condition;
-      windSpeedElement.textContent = `Wind Speed: ${windSpeed}`;
-      windChillElement.textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(2)}`;
+      windSpeedElement.textContent = `Wind Speed: ${windSpeed} mph`;
+      windChillElement.textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(2)} m/s`;
     } else {
       throw Error(await response.text());
     }
