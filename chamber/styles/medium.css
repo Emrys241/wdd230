@@ -146,5 +146,13 @@
         width: 500px;
         height: 500px;
       }
+      .contact-page h2 {
+        padding-top: 55px;
+      }
+      main p {
+        font-size: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
 
 }
