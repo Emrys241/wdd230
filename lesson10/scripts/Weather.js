@@ -34,6 +34,6 @@ function displayResults(weatherData) {
     captionDesc.textContent = capitalize(desc);
 }
 
-{
+function capitalize(str) {
     return str.replace(/\b\w/g, char => char.toUpperCase());
 }
