@@ -5,7 +5,7 @@ const conditionElement = document.querySelector('.weather-icon figcaption');
 const windSpeedElement = document.getElementById('windSpeed');
 const windChillElement = document.getElementById('windChill');
 
-const apiKey = '15cceac47631850b455872b6c555a9ef';
+const apiKey = 'e4e9a3c6630e45e25eac6d6e2f048af1';
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Sandpoint,us&appid=${apiKey}&units=imperial`;
 
 // Defined asynchronous function to fetch data from the API
