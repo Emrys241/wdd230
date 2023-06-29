@@ -6,7 +6,7 @@ const windSpeedElement = document.getElementById('windSpeed');
 const windChillElement = document.getElementById('windChill');
 
 const apiKey = 'e4e9a3c6630e45e25eac6d6e2f048af1';
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Sandpoint,us&appid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=accra,ghana&appid=${apiKey}&units=imperial`;
 
 // Defined asynchronous function to fetch data from the API
 async function apiFetch() {
@@ -26,7 +26,7 @@ async function apiFetch() {
       weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
       temperatureElement.textContent = temperature;
       conditionElement.textContent = condition;
-      windSpeedElement.textContent = `Wind Speed: ${windSpeed} mph`;
+      windSpeedElement.textContent = `Wind Speed: ${windSpeed} m/s`;
       windChillElement.textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(2)} m/s`;
     } else {
       throw Error(await response.text());
