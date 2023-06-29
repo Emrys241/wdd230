@@ -2,6 +2,8 @@
 const weatherIconElement = document.getElementById('weather-icon');
 const temperatureElement = document.getElementById('current-temp');
 const conditionElement = document.querySelector('figcaption');
+const windSpeedElement = document.getElementById('windSpeed');
+const windChillElement = document.getElementById('windChill');
 
 const apiKey = 'e4e9a3c6630e45e25eac6d6e2f048af1';
 const url = `https://api.openweathermap.org/data/2.5/weather?q=accra,ghana&appid=${apiKey}&units=imperial`;
@@ -16,6 +18,7 @@ async function apiFetch() {
 
       // Extract relevant information from the data object
       const temperature = data.main.temp;
+      const windSpeed = data.wind.speed;
       const iconCode = data.weather[0].icon;
       const condition = capitalizeFirstLetter(data.weather[0].description);
 
@@ -23,6 +26,8 @@ async function apiFetch() {
       weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
       temperatureElement.textContent = temperature;
       conditionElement.textContent = condition;
+      windSpeedElement.textContent = `Wind Speed: ${windSpeed} m/s`;
+      windChillElement.textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(2)} m/s`;
     } else {
       throw Error(await response.text());
     }
@@ -34,6 +39,13 @@ async function apiFetch() {
 // Function to capitalize the first letter of each word
 function capitalizeFirstLetter(string) {
   return string.replace(/\b\w/g, (match) => match.toUpperCase());
+}
+
+// Function to calculate wind chill
+function calculateWindChill(temperature, windSpeed) {
+  // Implement your wind chill calculation logic here
+  // Replace this placeholder logic with the actual formula
+  return temperature - windSpeed;
 }
 
 apiFetch();
