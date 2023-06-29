@@ -1,10 +1,10 @@
 // Select HTML elements in the document
 const weatherIconElement = document.getElementById('weather-icon');
 const temperatureElement = document.getElementById('current-temp');
-const conditionElement = document.querySelector('.weather-icon figcaption');
+const conditionElement = document.querySelector('figcaption');
 
 const apiKey = 'e4e9a3c6630e45e25eac6d6e2f048af1';
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Sandpoint,us&appid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=accra,ghana&appid=${apiKey}&units=imperial`;
 
 // Defined asynchronous function to fetch data from the API
 async function apiFetch() {
