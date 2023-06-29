@@ -1,50 +1,76 @@
-// Select HTML elements in the document
-const weatherIconElement = document.getElementById('weather-icon');
-const temperatureElement = document.getElementById('current-temp');
-const conditionElement = document.querySelector('figcaption');
-const windSpeedElement = document.getElementById('windSpeed');
-const windChillElement = document.getElementById('windChill');
+document.addEventListener("DOMContentLoaded", () => {
+    // select HTML elements in the document
+    const currentTemp = document.querySelector('#current-temp');
+    const weatherIcon = document.querySelector('#weather-icon');
+    const captionDesc = document.querySelector('figcaption');
+    // API url
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=e4e9a3c6630e45e25eac6d6e2f048af1";
+    // Fetch API and display
+    apiFetch(url).then(data => displayResults(currentTemp, weatherIcon, captionDesc, data));
+});
 
-const apiKey = 'e4e9a3c6630e45e25eac6d6e2f048af1';
-const url = `https://api.openweathermap.org/data/2.5/weather?q=accra,ghana&appid=${apiKey}&units=imperial`;
+/**
+ * Fetches the data from given url
+ * @param {String} url API request url
+ * @returns JSON data object
+ */
+async function apiFetch(url) {
+    // JSON data
+    let data;
 
-// Defined asynchronous function to fetch data from the API
-async function apiFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-
-      // Extract relevant information from the data object
-      const temperature = data.main.temp;
-      const windSpeed = data.wind.speed;
-      const iconCode = data.weather[0].icon;
-      const condition = capitalizeFirstLetter(data.weather[0].description);
-
-      // Update HTML elements with the retrieved data
-      weatherIconElement.src = `https://openweathermap.org/img/w/${iconCode}.png`;
-      temperatureElement.textContent = temperature;
-      conditionElement.textContent = condition;
-      windSpeedElement.textContent = `Wind Speed: ${windSpeed} m/s`;
-      windChillElement.textContent = `Wind Chill: ${calculateWindChill(temperature, windSpeed).toFixed(2)} m/s`;
-    } else {
-      throw Error(await response.text());
+    try {
+        // Fetch url
+        const response = await fetch(url);
+        // Verify response
+        if (response.ok) {
+        // Get JSON data
+        data = await response.json();
+        // Catch error
+        } else {
+            throw Error(await response.text());
+        }
+    // Catch error
+    } catch (error) {
+        console.log(error);
+        return null;
     }
-  } catch (error) {
-    console.log('An error occurred while fetching weather data:', error);
-  }
+    return data;
 }
 
-// Function to capitalize the first letter of each word
-function capitalizeFirstLetter(string) {
-  return string.replace(/\b\w/g, (match) => match.toUpperCase());
+/**
+ * Properly displays the weather info
+ * @param {HTMLElement} currentTemp HTML element to insert temperature
+ * @param {HTMLElement} weatherIcon HTML img
+ * @param {HTMLElement} captionDesc HTML figcaption
+ * @param {Object} weatherData JSON data object
+ */
+function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
+    // Get the temperature in Fahrenheit without decimals
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    // Create url for icon
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    // Create alt text
+    const desc = weatherData.weather[0].description.capitalize();
+    // Set properties
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
 }
 
-// Function to calculate wind chill
-function calculateWindChill(temperature, windSpeed) {
-const windChill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
-  return Math.round(windChill);
+/**
+ * Returns the same capitalized string
+ * @returns Capitalized String
+ */
+String.prototype.capitalize = function() {
+    // split the string by spaces
+    let arr = this.split(" ");
+    // capitalized array
+    let capArr = [];
+    // loop through every word
+    arr.forEach(word => {
+        // capitalize word
+        capArr.push(`${word.slice(0, 1).toUpperCase()}${word.slice(1)}`);
+    });
+    // join array and return
+    return capArr.join(" ");
 }
-
-apiFetch();
