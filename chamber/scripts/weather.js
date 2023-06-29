@@ -1,7 +1,7 @@
 // Select HTML elements in the document
 const weatherIconElement = document.getElementById('weather-icon');
 const temperatureElement = document.getElementById('current-temp');
-const conditionElement = document.querySelector('.weather-icon figcaption');
+const conditionElement = document.querySelector('figcaption');
 const windSpeedElement = document.getElementById('windSpeed');
 const windChillElement = document.getElementById('windChill');
 
@@ -43,9 +43,8 @@ function capitalizeFirstLetter(string) {
 
 // Function to calculate wind chill
 function calculateWindChill(temperature, windSpeed) {
-  // Implement your wind chill calculation logic here
-  // Replace this placeholder logic with the actual formula
-  return temperature - windSpeed;
+const windChill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
+  return Math.round(windChill);
 }
 
 apiFetch();
