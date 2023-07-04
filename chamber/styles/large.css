@@ -118,6 +118,7 @@
         grid-row: 3/4;
         grid-column: 2/3;
     }
+    
     .footer2 {
         display: none;
     }
@@ -141,12 +142,17 @@
     .welcome {
         font-size: 25px;
         text-align: center;
-        padding-left:25%;
+        padding-left:10%;
         padding-top: 10%;
     }
     .myphoto {
-        padding-left: 25%;
-    }
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+      
       /*Discover CSS*/
 /*--------------------------------------------------------------------------*/
 .discover div:hover{
