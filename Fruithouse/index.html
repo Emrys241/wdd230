@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="icon" href="favicon.ico">
+    <meta
+      name="description"
+      content="This is a website site for fruit juice."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header class="clearfix">
+        <div class="header-date">
+            <span id="currentdate"></span>
+        </div>
+        <div class="mainheader">
+          <div class="header-details">
+            <img src="images/bountiful-logo.webp" alt="Logo of Bountiful Logo">
+            <h1 class="header-name">Bountiful Foods</h1>
+        </div>
+        <nav>
+          <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+          <div class="socials">
+            <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr">
+              <img src="images/facebook-logo.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com/">
+              <img src="images/twitter-logo1.png" alt="twitter icon">
+            </a>
+            <a href="https://twitter.com/">
+              <img src="images/linkedin-logo.webp" alt="linkedin icon">
+            </a>
+          </div>
+        </div>
+        
+        
+    </header>
+
+    <main>
+      <div class="sidebar">
+        <div class="image-container">
+          <img id="sidebar-image" src="images/fruit1.webp" alt="Sidebar Image">
+          <div class="overlay-text">
+            <p id="overlay-text">Classic Orange Juice made for you</p>
+          </div>
+        </div>
+      </div>
+      <section class="summary">
+        <h2>Santa Monica</h2>
+        <p>Santa Monica is a beachside city of 8.3 square miles on the westside of Los Angeles County. 
+          Offering an environment of unparalleled natural beauty, the city is home to a mix of residential
+           communities, commercial districts, and recreational venues.
+          anta Monica features three miles of Pacific beaches and the Santa Monica Pier. 
+          Santa Monica’s residential population is approximately 93,000, increasing to an estimated 250,000
+           during the day with tourists, shoppers, and employees. Tourism attracts over 8 million visitors annually.
+           The City of Santa Monica was incorporated on November 30, 1886 and subsequently adopted a City Charter in 1945.
+            In 1947, a City Council-City Manager form of government was established. The City Council consists of seven members 
+            elected by the community at large to four year terms.</p>
+      </section>
+      <section id="call-to-action">
+        <div class="call-to-action">
+          <img src="images/fruit10.webp" alt="Image of fruit">
+          <div class="call-overlay">
+            <h2><a href="fresh.html">Make your Own Juice</a></h2>
+          </div>
+        </div>
+      </section>
+      <section class="site-weather">
+        <div class="weather">
+          <h2>Weather</h2>
+          <figure class="weather-icon">
+            <img src="" alt="Icon for weather" id="weather-icon">
+            <span id="current-temp"></span><span class="celcius">&deg;F</span>
+            <br>
+            <br>
+            <figcaption></figcaption>
+          </figure>
+          <hr>
+          <span id="windSpeed"></span> <br>
+          <span id="windChill"></span>
+          <p>Supported by <a href="https://openweathermap.org/">OpenWeatherMap.Org</a></p>
+        </div>
+      </section>
+      <section class="image-card1">
+        <picture>
+          <img
+            src="images/placeholder.png"
+            data-src="images/fruit4.webp"
+            alt="placeholder"
+            loading="lazy">
+        </picture>
+      </section>
+      
+      <section class="specialty">
+        <h2>Your Number of Specialty</h2>
+        <div id="info-card"></div>
+      </section>
+   
+    </main>
+
+    <footer>
+      <section class="infomation">
+        <div>
+          <h2>Bountiful Foods</h2>
+          <p>Carlsbad, California</p>
+          <p>The USA</p>
+        </div>
+        <div>
+          <p>info@bountiful.foods.com</p>
+          <p>+233 2479 34883</p>
+          <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z"
+            >📍 See Location</a
+          >
+        </div>
+      </section>
+    </div>
+      <section class="modification">
+        <div class="footerTime">
+          &copy; <span id="currentyear"></span><div id="lastModified">Last Modified</div>
+        </div>
+      </section>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/display-side-images.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/lazyload.js"></script>
+  </body>
+</html>
