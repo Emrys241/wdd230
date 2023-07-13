@@ -1,0 +1,88 @@
+@media only screen and (min-width: 35rem) {
+    #navigation{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    nav ul li a{
+        text-align: center;
+        padding-right: 40px;
+        margin-right: 40px;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainheader {
+        /* display: contents; */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+    }
+    .mainheader .socials {
+        text-align: right;
+        margin-left: 5rem;
+        margin-top: 40px;
+    }
+
+    .mainheader .socials img {
+        float: right;
+        width: 100px;
+    }
+   
+    .header-details img {
+        width: 200px;
+    }
+    .header-name {
+        font-size: 40px;
+        
+    }
+    
+   
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .sidebar {
+        display: contents;
+        display: contents;
+        width: 200px; 
+        height: 100vh;
+        background-color: #f3dcd1;
+        padding: 20px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .sidebar .image-container .text-overlay p {
+        font-size: 50px;
+    }
+    .image-container {
+        position: relative;
+        
+    }
+    .sidebar img {
+        max-width: 100%;
+        max-height: 400px;
+        padding: 10px;
+        object-fit: contain;
+    }
+    .overlay-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(65, 57, 57); 
+        color: white; 
+        padding: 10px;
+    }
+    .image-card1,
+    .call-to-action {
+        margin-right: 10px;
+    }
+    #call-to-action {
+        grid-column: 2/3;
+    }
+    .site-weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    } 
+}
