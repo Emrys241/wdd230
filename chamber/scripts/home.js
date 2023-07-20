@@ -40,3 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(img);
   });
 });
+
+document.getElementById("submit").addEventListener("click", function(event) {
+  event.preventDefault();
+  window.location.href = "chamber/thankyou.html";
+});
+

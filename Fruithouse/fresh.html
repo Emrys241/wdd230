@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="icon" href="favicon.ico">
+    <meta
+      name="description"
+      content="This is a website site for fruit juice."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+  </head>
+  <body> 
+    <header class="clearfix">
+      <div class="header-date">
+          <span id="currentdate"></span>
+      </div>
+      <div class="mainheader">
+        <div class="header-details">
+          <img src="images/fruitpagelogo.webp" alt="Logo of Bountiful Logo">
+          <h1 class="header-name">Bountiful Foods</h1>
+      </div>
+      <nav>
+        <button id="humburgerbtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+  </header>
+    <main class="specialty">
+        <h2>Order Your Prefered Fresh Drinks</h2>
+        <form id="order-form" action="mailto:edoemrys@gmail.com" method="post" enctype="text/plain">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" autocomplete="given-name" required><br>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" autocomplete="email" required><br>
+        
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" autocomplete="tel" required><br>
+        
+          <label for="fruit1">Fruit 1:</label>
+          <select id="fruit1" required>
+            <option value="">Select a fruit</option>
+            
+          </select><br>
+        
+          <label for="fruit2">Fruit 2:</label>
+          <select id="fruit2" required>
+            <option value="">Select a fruit</option>
+            
+          </select><br>
+        
+          <label for="fruit3">Fruit 3:</label>
+          <select id="fruit3" required>
+            <option value="">Select a fruit</option>
+            
+          </select><br>
+        
+          <label for="instructions">Special Instructions:</label>
+          <textarea id="instructions"></textarea><br>
+        
+          <button type="submit" id="submit">Submit Order</button>
+        </form>
+        
+        <div id="order-summary"></div>
+        
+      </main>
+
+    <footer>
+      
+      <section class="infomation">
+        <div>
+          <h2>Bountiful Foods</h2>
+          <p>Carlsbad, California</p>
+          <p>The USA</p>
+        </div>
+        <div>
+          <p>info@bountiful.foods.com</p>
+          <p>+233 2477 09497</p>
+          <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z"
+            >📍 See Location</a
+          >
+        </div>
+        <div class="socials">
+          <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr">
+            <img src="images/fb-logo.png" alt="facebook icon">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/ig-logo.png" alt="twitter icon">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/li-logo.png" alt="linkedin icon">
+          </a>
+        </div>
+      </section>
+    </div>
+      <section class="modification">
+        <div class="footerTime">
+          &copy; <span id="currentyear"></span><div id="lastModified">Last Modified</div>
+        </div>
+      </section>
+    </footer>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/nav.js"></script>
+    
+  </body>
+</html>

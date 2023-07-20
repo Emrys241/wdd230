@@ -31,30 +31,17 @@
         </div>
         <div class="mainheader">
           <div class="header-details">
-            <img src="images/bountiful-logo.webp" alt="Logo of Bountiful Logo">
+            <img src="images/fruitpagelogo.webp" alt="Logo of Bountiful Logo">
             <h1 class="header-name">Bountiful Foods</h1>
         </div>
         <nav>
+          <button id="humburgerbtn"><span>&#9776;</span><span>X</span></button>
           <ul id="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="fresh.html">Fresh</a></li>
             <li><a href="about.html">About Us</a></li>
           </ul>
         </nav>
-          <div class="socials">
-            <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr">
-              <img src="images/facebook-logo.png" alt="facebook icon">
-            </a>
-            <a href="https://twitter.com/">
-              <img src="images/twitter-logo1.png" alt="twitter icon">
-            </a>
-            <a href="https://twitter.com/">
-              <img src="images/linkedin-logo.webp" alt="linkedin icon">
-            </a>
-          </div>
-        </div>
-        
-        
     </header>
 
     <main>
@@ -72,7 +59,7 @@
           Offering an environment of unparalleled natural beauty, the city is home to a mix of residential
            communities, commercial districts, and recreational venues.
           anta Monica features three miles of Pacific beaches and the Santa Monica Pier. 
-          Santa Monica’s residential population is approximately 93,000, increasing to an estimated 250,000
+          Santa Monicas residential population is approximately 93,000, increasing to an estimated 250,000
            during the day with tourists, shoppers, and employees. Tourism attracts over 8 million visitors annually.
            The City of Santa Monica was incorporated on November 30, 1886 and subsequently adopted a City Charter in 1945.
             In 1947, a City Council-City Manager form of government was established. The City Council consists of seven members 
@@ -80,9 +67,9 @@
       </section>
       <section id="call-to-action">
         <div class="call-to-action">
-          <img src="images/fruit10.webp" alt="Image of fruit">
+          <img src="images/Fruit-Juice.jpeg" alt="Image of fruit">
           <div class="call-overlay">
-            <h2><a href="fresh.html">Make your Own Juice</a></h2>
+            <h2><a href="fresh.html"> The Juice House</a></h2>
           </div>
         </div>
       </section>
@@ -90,23 +77,23 @@
         <div class="weather">
           <h2>Weather</h2>
           <figure class="weather-icon">
-            <img src="" alt="Icon for weather" id="weather-icon">
-            <span id="current-temp"></span><span class="celcius">&deg;F</span>
+            <p>California</p>
+            <span id="current-temp"></span><span class="celcius">&deg;F</span><br>
+            <img src="img.png" alt="Icon for weather" id="weather-icon">
             <br>
             <br>
             <figcaption></figcaption>
           </figure>
-          <hr>
-          <span id="windSpeed"></span> <br>
-          <span id="windChill"></span>
-          <p>Supported by <a href="https://openweathermap.org/">OpenWeatherMap.Org</a></p>
+          <p id="humidity"></p>
+          
         </div>
+        <div id="forecast-container"></div>
       </section>
       <section class="image-card1">
         <picture>
           <img
             src="images/placeholder.png"
-            data-src="images/fruit4.webp"
+            data-src="images/strawbery.jpeg"
             alt="placeholder"
             loading="lazy">
         </picture>
@@ -120,6 +107,7 @@
     </main>
 
     <footer>
+      
       <section class="infomation">
         <div>
           <h2>Bountiful Foods</h2>
@@ -128,23 +116,30 @@
         </div>
         <div>
           <p>info@bountiful.foods.com</p>
-          <p>+233 2479 34883</p>
+          <p>+233 2477 09497</p>
           <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z"
             >📍 See Location</a
           >
         </div>
-      </section>
-    </div>
-      <section class="modification">
-        <div class="footerTime">
-          &copy; <span id="currentyear"></span><div id="lastModified">Last Modified</div>
+        <div class="socials">
+          <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr">
+            <img src="images/fb-logo.png" alt="facebook icon">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/ig-logo.png" alt="twitter icon">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/li-logo.png" alt="linkedin icon">
+          </a>
         </div>
       </section>
+    </div>
     </footer>
-    <script src="scripts/date.js"></script>
-    <script src="scripts/display-side-images.js"></script>
+    <script src="scripts/sideimage.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/fresh.js"></script>
     <script src="scripts/lazyload.js"></script>
+    <script src="scripts/nav.js"></script>
+
   </body>
 </html>
